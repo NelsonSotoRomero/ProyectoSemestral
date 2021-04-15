@@ -1,0 +1,29 @@
+body{
+    background-color: #181818;
+    background-position: left;
+    background-size: 100%;
+}
+.texto{   
+    color: rgb(255, 255, 255);
+}
+.mov{
+    padding-top: 30px;
+    background-color: #343a40;
+}
+.form-group{
+    color: blanchedalmond;
+    
+}
+.row2{
+    padding-top: 30px;
+    background-color: rgb(16, 95, 100);
+}
+.registro{
+    padding-left: 15px;
+}
+
+.row1{
+    
+    background-color: #343a40;
+    color: white;
+}
