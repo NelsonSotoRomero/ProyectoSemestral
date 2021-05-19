@@ -1,0 +1,49 @@
+body{
+    background-color: #181818;
+    background-position: left;
+    background-size: 100%;
+}
+.texto{   
+    color: rgb(255, 255, 255);
+}
+.mov{
+    padding-top: 30px;
+    background-color: #343a40;
+}
+.form-group{
+    color: blanchedalmond;
+    
+}
+.row2{
+    padding-top: 30px;
+    background-color: rgb(16, 95, 100);
+    padding-left: 5%;
+    padding-right: 45%;
+    padding-bottom: 30%;
+    
+}
+.registro{
+    padding-left: 15px;
+}
+
+.row1{
+    
+    background-color: #343a40;
+    color: white;
+}
+
+.row3{
+    padding-top: 30px;
+    background-color: rgb(16, 95, 100);
+    padding-bottom: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+
+#temperatura, #estacion{
+    color:aquamarine
+}
+
