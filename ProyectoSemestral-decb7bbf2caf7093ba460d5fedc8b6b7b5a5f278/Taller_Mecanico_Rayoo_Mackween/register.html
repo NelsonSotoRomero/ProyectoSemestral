@@ -25,7 +25,7 @@
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Entrar
+                    Ingresar
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="Login.html">Login</a>
@@ -36,15 +36,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="Contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Atenciones
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Atención por Mecanico</a>
-                    <a class="dropdown-item" href="#">Atención por Categoría</a>
-                    <div class="dropdown-divider"></div>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="Atenciones.html">Atenciones</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">🔎</a>
@@ -81,7 +74,7 @@
       </div>
     <div class="container-fluid">
         <div class="row2">
-          <form>
+          <form id="formulario1" action="" method="post">
             <div class="row pb-4">
                 <div class="col"></div>
                 <div class="col-8">
@@ -108,10 +101,13 @@
             <div class="form-row pb-2">
                 <div class="col-2"></div>
                 <div class="col-3">
-                    <input type="text" class="form-control" placeholder="N° Identificación">
+                    <input id="numeroIden" type="text" class="form-control" placeholder="N° Identificación">
+                    <span id="mensaje2" class="errores">Ingrese un numero de Identificación valido (Min. 6 Numeros)</span>
+
                 </div>
                 <div class="col-5">
-                    <input type="text" class="form-control" placeholder="Nombre Completo">
+                    <input id="nombre" type="text" class="form-control" placeholder="Nombre Completo" pattern="^[A-Za-z]+$" maxlength="35" minlength="10">
+                    <span id="mensaje3" class="errores">Ingrese nombre Completo</span>
                 </div>
                 <div class="col">
 
@@ -123,10 +119,12 @@
             <div class="form-row pb-2">
                 <div class="col-2"></div>
                 <div class="col">
-                    <input type="email" class="form-control" placeholder="Correo Electrónico">
+                    <input id="correo" type="email" class="form-control" placeholder="Correo Electrónico">
+                    <span id="mensaje4" class="errores">Ingrese correo valido (EJ: pepito@paga.doble)</span>
                 </div>
                 <div class="col">
-                    <input type="tel" class="form-control" placeholder="Teléfono de Contacto">
+                    <input id="telefono" type="tel" class="form-control" placeholder="Teléfono de Contacto">
+                    <span id="mensaje5" class="errores">Ingrese un numero valido</span>
                 </div>
                 <div class="col-2"></div>
             </div>
@@ -154,7 +152,7 @@
             <div class="form-row pb-2">
                 <div class="col-2"></div>
                 <div class="col">
-                    <button class="btn btn-primary">Enviar</button>
+                    <button id="bEnviar2" class="btn btn-primary">Registrar</button>
                     <button class="btn btn-secondary" type="reset">Limpiar</button>
                 </div>
                 <div class="col-2"></div>
@@ -163,6 +161,13 @@
         </form>
         </div>
     </div>
+    <footer class="container-fluid">
+      <ul class="mov">
+        <a href="https://es-la.facebook.com" target="_blank"><li class="texto">Facebook</li></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><li class="texto">Twitter</li></a>
+        <a href="https://www.instagram.com" target="_blank"><li class="texto">Instagram</li></a>
+      </ul>
+  </footer>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>

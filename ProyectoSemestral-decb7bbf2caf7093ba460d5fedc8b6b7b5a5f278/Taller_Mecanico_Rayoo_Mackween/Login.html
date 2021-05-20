@@ -25,7 +25,7 @@
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Entrar
+                    Ingresar
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="Login.html">Login</a>
@@ -36,15 +36,8 @@
                 <li class="nav-item">
                   <a class="nav-link" href="Contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Atenciones
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Atención por Mecanico</a>
-                    <a class="dropdown-item" href="#">Atención por Categoría</a>
-                    <div class="dropdown-divider"></div>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="Atenciones.html">Atenciones</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">🔎</a>
@@ -81,25 +74,32 @@
       </div>
     <div class="continer-fluid"> 
         <div class="row3">
-            <form>
+            <form id="formulario1" action="" method="post">
               <div class="row pb-4">
                 <div class="col"></div>
-                <div class="col-8">
-                    <h1>Login</h1>
-                </div>
+                  <div class="col-8">
+                      <h1>Login</h1>
+                  </div>
                 <div class="col"></div>
-            </div>            
-                  <input type="email" class="form-control" placeholder="Correo Electrónico">    
+              </div>            
+                  <input id="email" type="text" class="form-control" placeholder="Correo Electronico" name="email" >
+                  <span id="mensaje1" class="errores">Escribe un Mail Correcto (EJ: pepito@paga.doble)</span>    
                   <br>                      
-                  <input type="password" class="form-control" placeholder="Contraseña">      
+                  <input id="password" type="text" class="form-control" placeholder="Contraseña" name="password">      
                   <br>              
-                  <button class="btn btn-primary">Enviar</button>
-            </div>
-            
-        </div>
+                  <button id="bEnviar" class="btn btn-primary">Ingresar</button>
+              </div>
             </form>
-        </div>
+        </div> 
+      </div>
     </div>
+    <footer class="container-fluid">
+      <ul class="mov">
+        <a href="https://es-la.facebook.com" target="_blank"><li class="texto">Facebook</li></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><li class="texto">Twitter</li></a>
+        <a href="https://www.instagram.com" target="_blank"><li class="texto">Instagram</li></a>
+      </ul>
+  </footer>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
